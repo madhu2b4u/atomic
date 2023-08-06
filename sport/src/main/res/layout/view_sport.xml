@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:id="@+id/dataLayout"
+        android:orientation="vertical"
+        android:paddingEnd="16dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvSportName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvSportDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:padding="16dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+ <androidx.appcompat.widget.LinearLayoutCompat
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+     <androidx.appcompat.widget.AppCompatButton
+         android:id="@+id/btnRefresh"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="16dp"
+         android:gravity="center"
+         android:padding="16dp"
+         android:background="@drawable/bg_button_28dp"
+         android:text="@string/refresh"
+         android:visibility="visible"
+         android:textColor="@color/white"
+         android:textSize="14sp" />
+
+     <androidx.appcompat.widget.LinearLayoutCompat
+         android:id="@+id/loaderView"
+         android:layout_width="match_parent"
+         android:layout_height="55dp"
+         android:layout_marginTop="26dp"
+         android:gravity="center"
+         android:padding="16dp"
+         android:background="@drawable/bg_button_28dp"
+         android:visibility="gone">
+
+         <ProgressBar
+             style="?android:attr/progressBarStyleLarge"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:indeterminateTint="@color/white"
+             android:progressDrawable="@drawable/circular_progress" />
+
+     </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+ </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>
