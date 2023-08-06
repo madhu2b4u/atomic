@@ -4,18 +4,18 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.liveData
 import com.demo.sport.LiveDataTestUtil
 import com.demo.sport.MainCoroutineRule
+import com.demo.sport.common.Result
+import com.demo.sport.common.Status
 import com.demo.sport.main.data.models.Sport
 import com.demo.sport.main.data.models.repository.MainRepository
 import com.demo.sport.main.domain.MainUseCase
+import com.demo.sport.main.domain.MainUseCaseImpl
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.Rule
 import org.junit.Test
 import org.mockito.kotlin.doReturn
 import org.mockito.kotlin.mock
-import com.demo.sport.common.Result
-import com.demo.sport.common.Status
-import com.demo.sport.main.domain.MainUseCaseImpl
 
 
 @ExperimentalCoroutinesApi

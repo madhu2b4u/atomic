@@ -4,7 +4,6 @@ import com.demo.sport.main.data.source.LocalDataSource
 import com.demo.sport.main.data.source.LocalDataSourceImpl
 import dagger.Binds
 import dagger.Module
-import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 

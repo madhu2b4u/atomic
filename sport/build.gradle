@@ -10,8 +10,6 @@ kapt {
     generateStubs = true
 }
 
-
-
 android {
     namespace 'com.demo.sport'
     compileSdk 33

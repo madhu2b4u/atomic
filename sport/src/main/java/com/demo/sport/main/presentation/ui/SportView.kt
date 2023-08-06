@@ -7,8 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelStoreOwner
 import com.demo.sport.databinding.ViewSportBinding
 import com.demo.sport.main.data.models.Sport
 import com.demo.sport.main.presentation.viewmodel.SportViewModel
@@ -70,17 +68,17 @@ class FeaturedSportView @JvmOverloads constructor(
         observeOnViewModel()
     }
 
-    private fun makeApiCall(){
+    private fun makeApiCall() {
         showLoader()
         viewModel.getSports()
     }
 
-    private fun showLoader(){
+    private fun showLoader() {
         binding.loaderView.show()
         binding.btnRefresh.hide()
     }
 
-    private fun hideLoader(){
+    private fun hideLoader() {
         binding.loaderView.hide()
         binding.btnRefresh.show()
     }

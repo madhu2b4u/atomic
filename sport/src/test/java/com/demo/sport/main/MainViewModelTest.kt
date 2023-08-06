@@ -5,6 +5,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
 import com.demo.sport.LiveDataTestUtil
 import com.demo.sport.MainCoroutineRule
+import com.demo.sport.common.Result
+import com.demo.sport.common.Status
 import com.demo.sport.main.data.models.Sport
 import com.demo.sport.main.domain.MainUseCase
 import com.demo.sport.main.presentation.viewmodel.SportViewModel
@@ -15,8 +17,6 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.mockito.kotlin.doReturn
-import com.demo.sport.common.Result
-import com.demo.sport.common.Status
 import org.mockito.kotlin.mock
 
 @ExperimentalCoroutinesApi

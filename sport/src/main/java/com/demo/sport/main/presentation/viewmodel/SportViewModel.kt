@@ -8,17 +8,16 @@ import androidx.lifecycle.viewModelScope
 import com.demo.sport.common.AppCoroutineDispatcherProvider
 import com.demo.sport.common.AppCoroutineDispatchers
 import com.demo.sport.common.Event
+import com.demo.sport.common.Result
 import com.demo.sport.common.SingleLiveEvent
+import com.demo.sport.common.Status
 import com.demo.sport.main.data.models.Sport
 import com.demo.sport.main.domain.MainUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
-import com.demo.sport.common.Result
-import com.demo.sport.common.Status
-import com.demo.sport.main.domain.MainUseCaseImpl
-import kotlinx.coroutines.delay
 
 
 @HiltViewModel
